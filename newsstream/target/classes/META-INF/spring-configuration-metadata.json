@@ -1,0 +1,23 @@
+{
+  "groups": [
+    {
+      "name": "newsstream.feeds",
+      "type": "com.marketnexus.newsstream.config.NewsStreamProperties",
+      "sourceType": "com.marketnexus.newsstream.config.NewsStreamProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "newsstream.feeds.poll-interval-ms",
+      "type": "java.lang.Long",
+      "sourceType": "com.marketnexus.newsstream.config.NewsStreamProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "newsstream.feeds.sources",
+      "type": "java.util.List<com.marketnexus.newsstream.config.NewsStreamProperties$FeedSource>",
+      "sourceType": "com.marketnexus.newsstream.config.NewsStreamProperties"
+    }
+  ],
+  "hints": []
+}
