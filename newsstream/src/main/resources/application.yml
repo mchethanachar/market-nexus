@@ -4,13 +4,13 @@ newsstream:
     sources:
       - name: economic-times
         url: https://economictimes.indiatimes.com/markets/rss.cms
-        enabled: false
+        enabled: false # unverified: feed reachability/parseability not yet confirmed, check before enabling
       - name: livemint
         url: https://www.livemint.com/rss/markets
         enabled: true
       - name: financial-express
         url: https://www.financialexpress.com/market/feed/
-        enabled: false
+        enabled: false # unverified: feed reachability/parseability not yet confirmed, check before enabling
       - name: hindu-business-line
         url: https://www.thehindubusinessline.com/markets/?service=rss
         enabled: true

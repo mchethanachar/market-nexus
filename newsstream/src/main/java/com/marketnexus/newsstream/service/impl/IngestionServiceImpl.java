@@ -47,7 +47,14 @@ public class IngestionServiceImpl implements IngestionService {
     }
 
     private IngestionResult ingestSource(NewsSource source) {
-        List<RawNews> articles = source.fetch();
+        List<RawNews> articles;
+        try {
+            articles = source.fetch();
+        } catch (Exception e) {
+            log.error("source={} event=fetch_failed error={}", source.getName(), e.getMessage(), e);
+            return new IngestionResult(0, 0, 0);
+        }
+
         int saved = 0, skipped = 0;
 
         for (RawNews raw : articles) {
