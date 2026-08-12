@@ -13,6 +13,7 @@
 
     <modules>
         <module>newsstream</module>
+        <module>advisor-batch</module>
     </modules>
 
     <properties>
